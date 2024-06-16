@@ -1,0 +1,39 @@
+site_name: EQKit
+
+theme:
+  name: mkdocs
+  user_color_mode_toggle: true
+  navigation_depth: 3
+  palette:
+    primary: stylesheets/extra.css
+
+nav:
+  - '' : 'index.md'
+  - 'Quick Start' : 'quickstart.md'
+  - 'User Guide' :
+    - 'Structure': 'userguide/eqkit.md'
+    - 'Feeds': 'userguide/feeds.md'
+    - 'Objects': 'userguide/objects.md.md'
+    - 'Scanner' : 'userguide/scanner.md'
+    - 'Studies' : 'userguide/studies.md'
+    - 'TA' : 'userguide/ta.md'
+    - 'Tools' : 'userguide/Qtools.md'
+    - 'Transformer' : 'userguide/ttools.md'
+    - 'Styles' : 'userguide/styles.md'
+    - 'Bunsen' : 'userguide/bunsen.md'
+    - 'Valuations' : 'userguide/valuations.md'
+  - 'Reference' :
+      - 'Feeds': 'reference/feeds.md'
+      - 'Objects': 'reference/objects.md'
+      - 'Scanner': 'reference/scanner.md'
+      - 'Studies': "reference/studies.md"
+  - 'Change Log' : "changelog.md"
+  - 'Roadmap' : "roadmap.md"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css
